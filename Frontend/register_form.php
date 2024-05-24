@@ -6,7 +6,7 @@
     <title>Sign-Up Form</title>
 </head>
 <body>
-    <form action="create_backend.php" method="POST">
+    <form action="../Backend/create.php" method="POST">
         <label>Enter Your Information</label>
         <br><br>
         <label>First Name: </label><br>
