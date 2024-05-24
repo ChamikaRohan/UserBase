@@ -1,5 +1,5 @@
 <?php
-    require "UserBase_env.php";
+    require "../UserBase_env.php";
     
     $servername = "localhost";
     $username = "root";

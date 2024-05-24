@@ -3,6 +3,4 @@
 
     $sql = "SELECT * FROM users";
     $users = $conn->query($sql);
-
-    print_r($users);
 ?>

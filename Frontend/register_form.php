@@ -7,8 +7,8 @@
 </head>
 <body>
     <form action="../Backend/create.php" method="POST">
-        <label>Enter Your Information</label>
-        <br><br>
+        <h1>Enter Your Information</h1>
+       
         <label>First Name: </label><br>
         <input type="text" name="first_name" />
         <br><br>
