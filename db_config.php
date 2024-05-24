@@ -1,11 +1,11 @@
 <?php
     require "UserBase_env.php";
-
-    $servername = "localhost";
-    $username = getenv('DB_USERNAME');
-    $password = getenv('DB_PASSWORD');
-    $database = "userbase";
     
+    $servername = "localhost";
+    $username = "root";
+    $password = "0716868110";
+    $database = "userbase";
+
     $conn  = new mysqli($servername, $username, $password, $database);
 
     if($conn->connect_error)

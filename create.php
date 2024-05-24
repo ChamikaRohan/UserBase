@@ -9,7 +9,7 @@
         $gender = $_POST["gender"];
         $hometown = $_POST["hometown"];
         $email = $_POST["email"];
-        $password = $_POST["password"];
+        $password = password_hash($_POST["password"], PASSWORD_DEFAULT);
     }
 
     $sql_stmt = $conn->prepare("INSERT INTO users (first_name, last_name, age, gender, hometown, email, password) 
