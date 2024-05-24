@@ -7,7 +7,7 @@
 </head>
 <body>
     <form action="create.php" method="POST">
-        <label>Enter your information</label>
+        <label>Enter Your Information</label>
         <br><br>
         <label>First Name: </label><br>
         <input type="text" name="first_name" />
