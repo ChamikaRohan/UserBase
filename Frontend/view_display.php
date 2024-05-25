@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <?php  include "../Backend/view.php"; ?>
+    <?php  include "../Backend/read.php"; ?>
     <h1>User details</h1>
 
     <table>
@@ -38,8 +38,9 @@
                     </form>
                 </td>
                 <td>
-                    <form action="../Backend/delete.php/id=<?php echo $user['id'] ?>" method="POST">
-                        <input type="submit" value="Delete" name="delete" /></td>
+                    <form action="../Backend/delete.php" method="GET">
+                        <input type="hidden" name="id" value="<?php echo $user['id'] ?>" />
+                        <button type="submit" class="button">Delete</button>
                     </form>
             </tr>
             <?php $count=$count+1; ?>
