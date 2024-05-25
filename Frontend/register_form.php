@@ -33,5 +33,10 @@
 
         <input type="submit" name="submit" />
     </form>
+    <div style="margin: 20px 2px 10px;  font-size: 30 ;font-weight: 900;">
+            <form action="./view_display.php" method="POST">
+                <button>View the users list</button>
+            </form>
+    </div>
 </body>
 </html>

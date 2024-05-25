@@ -47,5 +47,10 @@
             <?php endforeach;?>
         </tbody>
     </table>
+    <div style="margin: 20px 2px 10px;  font-size: 30 ;font-weight: 900;">
+            <form action="./register_form.php" method="POST">
+                <button>Add a new user</button>
+            </form>
+    </div>
 </body>
 </html>
