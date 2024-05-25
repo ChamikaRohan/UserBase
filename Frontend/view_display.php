@@ -33,8 +33,9 @@
                 <td><?php echo $user["hometown"]; ?></td>
                 <td><?php echo $user["email"]; ?></td>
                 <td>
-                    <form action="../Backend/update.php/id=<?php echo $user['id']; ?>" method="POST">
-                        <input type="submit" value="Edit" name="edit" />
+                    <form action="../Frontend/update_form.php" method="GET">
+                        <input type="hidden" name="id" value="<?php echo $user['id'] ?>" />
+                        <input type="submit" value="Edit" />
                     </form>
                 </td>
                 <td>
