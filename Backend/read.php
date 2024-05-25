@@ -3,4 +3,6 @@
 
     $sql = "SELECT * FROM users";
     $users = $conn->query($sql);
+
+    $conn->close();
 ?>

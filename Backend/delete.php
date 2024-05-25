@@ -12,7 +12,8 @@
     
     if ($result == TRUE)
     {
-        echo "User with ID $id has been deleted sucessfully!";
+        header("Location: http://localhost/UserBase/Frontend/view_display.php");
+        exit();
     }
     else
     {

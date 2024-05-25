@@ -19,13 +19,15 @@ include "db_config.php";
     
     if($result == TRUE)
     {
-        echo "User created successfully!";
+        header("Location: http://localhost/UserBase/Frontend/view_display.php");
+        exit();
     }
     else
     {
-        echo "Error: ".$sql."<br/>".$conn->error;
+        echo "Error: ".htmlspecialchars($sql_stmt->error);
     }
 
+    $sql_stmt->close();
     $conn->close();
 ?>
 
